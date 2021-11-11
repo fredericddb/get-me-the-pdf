@@ -6,14 +6,23 @@ output:
 ---
 
 ----
+**Examples:**
+[**ohi-science.org/ohi-global**](http://ohi-science.org/ohi-global)
 
+5.	Clermont, J., A. Grenier-Potvin, E. Duchesne, C. Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021. The predator activity landscape predicts the anti-predator behavior and distribution of prey in a tundra community. Ecosphere. 135p. [**pdf**](http://ohi-science.org/ohi-global)
 
+4.	Bates, A., R.Primack, [F. Dulude-de Broin et 337 auteurs], C. Duarte, 2021. Diverse Human-Nature Interactions Revealed by the Global COVID-19 Lockdown. Biological Conservation. 42p.
+
+3.	Letourneux, F., T. Grandmont, F. Dulude-de Broin, M-C. Martin, J. Lefebvre, A. Kato, J. Bêty, G. Gauthier & P. Legagneux, 2020. COVID19-induced reduction in human disturbance enhances fattening rate of an overabundant goose species. Biological Conservation. 27p.
+
+2.	Dulude-de Broin, F., S. Hamel, G. F. Mastromonaco, S. D. Côté, 2019. Predation risk and mountain goat reproduction: Evidence for stress-induced breeding suppression in a wild ungulate. Functional Ecology, 34 : 1003-1014.
+
+1.	Dulude-de Broin, F., S. D. Côté, D. P. Whiteside, G. F. Mastromonaco, 2019. Faecal metabolites and hair cortisol as biological markers of HPA-axis activity in the Rocky mountain goat. General and Comparative Endocrinology, 280: 147-157.
 
 ----
 
 
-**Examples:**
-[**ohi-science.org/ohi-global**](http://ohi-science.org/ohi-global)
+
 
 
 We have been using R Markdown for the Ocean Health Index:  .  
