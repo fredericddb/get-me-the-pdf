@@ -1,0 +1,10 @@
+name: "get me the pdfs"
+navbar:
+  title: "pdfs"
+output_dir: "."
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+#    include:
+#      after_body: _footer.html
