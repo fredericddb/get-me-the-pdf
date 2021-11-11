@@ -1,6 +1,6 @@
-name: "get me the pdfs"
+name: "Here are the pdfs"
 navbar:
-  title: "pdfs"
+  title: " "
 output_dir: "."
 output:
   html_document:
