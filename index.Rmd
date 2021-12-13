@@ -7,7 +7,7 @@ output:
 
 ----
 
-**5.	Clermont, J., A. Grenier-Potvin, E. Duchesne, C. Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021. The predator activity landscape predicts the anti-predator behavior and distribution of prey in a tundra community. Ecosphere. 135p.** 
+**5.	Clermont, J., A. Grenier-Potvin, E. Duchesne, C. Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021. The predator activity landscape predicts the anti-predator behavior and distribution of prey in a tundra community. Ecosphere. 135p.**   
 [**Clermont et al., 2021 - pdf**](https://github.com/fredericddb/get-me-the-pdf/blob/main/the%20files/Clermont%20et%20al.%2C%202021.pdf)
 
 **4.	Bates, A., R.Primack, [F. Dulude-de Broin & 337 authors], C. Duarte, 2021. Diverse Human-Nature Interactions Revealed by the Global COVID-19 Lockdown. Biological Conservation. 42p.**    
