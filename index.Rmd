@@ -8,10 +8,10 @@ output:
 ----
 
 **6.	Beardsell, A., D. Berteaux, F. Dulude-De Broin, G. Gauthier, J. Clermont, D. Gravel, J. Bêty, 2023. Predator-mediated interactions through changes in predator home range size can lead to local prey exclusion. Proceedings of the Royal Society B, 290(2004), 20231154.**   
-[**Beardsell et al. 2023 - pdf**](https://github.com/fredericddb/get-me-the-pdf/blob/main/the%20files/Beardsell%20et%20al.%2C%202023.pdf)
+[**Beardsell et al. 2023 - pdf**](https://fredericddb.github.io/get-me-the-pdf/the files/Beardsell et al.%2C 2023.pdf)
 
 **5.	Clermont, J., A. Grenier-Potvin, E. Duchesne, C. Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021. The predator activity landscape predicts the anti-predator behavior and distribution of prey in a tundra community. Ecosphere. 135p.**   
-[**Clermont et al. 2021 - pdf**](https://github.com/fredericddb/get-me-the-pdf/raw/main/the%20files/Clermont%20et%20al.%2C%202021.pdf)
+[**Clermont et al. 2021 - pdf**](https://fredericddb.github.io/get-me-the-pdf/the files/Clermont et al.%2C 2021.pdf)
 
 **4.	Bates, A., R.Primack, [F. Dulude-de Broin & 337 authors], C. Duarte, 2021. Diverse Human-Nature Interactions Revealed by the Global COVID-19 Lockdown. Biological Conservation. 42p.**    
 [**Bates et al. 2021 - pdf**](https://fredericddb.github.io/get-me-the-pdf/the files/Bates et al.%2C 2021.pdf)
