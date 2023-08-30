@@ -13,7 +13,7 @@
 
 <title>Here are the pdfs</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -137,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -170,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -179,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -232,7 +233,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -260,16 +261,51 @@ $(document).ready(function () {
 
 
 <hr />
-<p><strong>5. Clermont, J., A. Grenier-Potvin, E. Duchesne, C. Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021. The predator activity landscape predicts the anti-predator behavior and distribution of prey in a tundra community. Ecosphere. 135p.</strong><br />
-<a href="https://github.com/fredericddb/get-me-the-pdf/raw/main/the%20files/Clermont%20et%20al.%2C%202021.pdf"><strong>Clermont et al., 2021 - pdf</strong></a></p>
-<p><strong>4. Bates, A., R.Primack, [F. Dulude-de Broin &amp; 337 authors], C. Duarte, 2021. Diverse Human-Nature Interactions Revealed by the Global COVID-19 Lockdown. Biological Conservation. 42p.</strong><br />
-<a href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Bates%20et%20al.%2C%202021.pdf"><strong>Bates et al., 2021 - pdf</strong></a></p>
-<p><strong>3. Letourneux, F., T. Grandmont, F. Dulude-de Broin, M-C. Martin, J. Lefebvre, A. Kato, J. Bêty, G. Gauthier &amp; P. Legagneux, 2020. COVID19-induced reduction in human disturbance enhances fattening rate of an overabundant goose species. Biological Conservation. 27p.</strong><br />
-<a href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Letourneux%20et%20al.%2C%202020.%20COVID19-induced%20reduction%20in%20human%20disturbance%20enhances%20fattening%20of%20an%20overabundant%20goose%20species.pdf"><strong>Letourneux et al., 2020 - pdf</strong></a></p>
-<p><strong>2. Dulude-de Broin, F., S. Hamel, G. F. Mastromonaco, S. D. Côté, 2020. Predation risk and mountain goat reproduction: Evidence for stress-induced breeding suppression in a wild ungulate. Functional Ecology, 34 : 1003-1014.</strong><br />
-<a href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Dulude-de%20Broin%20et%20al.%2C%202020.pdf"><strong>Dulude-de Broin et al., 2020 - pdf</strong></a></p>
-<p><strong>1. Dulude-de Broin, F., S. D. Côté, D. P. Whiteside, G. F. Mastromonaco, 2019. Faecal metabolites and hair cortisol as biological markers of HPA-axis activity in the Rocky mountain goat. General and Comparative Endocrinology, 280: 147-157.</strong><br />
-<a href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Dulude-de%20broin%20et%20al.%2C%202019.%20Gen.%20Comp.%20Endocrinol..pdf"><strong>Dulude-de Broin et al., 2019 - pdf</strong></a></p>
+<p><strong>6. Beardsell, A., D. Berteaux, F. Dulude-De Broin, G.
+Gauthier, J. Clermont, D. Gravel, J. Bêty, 2023. Predator-mediated
+interactions through changes in predator home range size can lead to
+local prey exclusion. Proceedings of the Royal Society B, 290(2004),
+20231154.</strong><br />
+<a
+href="https://github.com/fredericddb/get-me-the-pdf/blob/main/the%20files/Beardsell%20et%20al.%2C%202023.pdf"><strong>Beardsell
+et al. 2023 - pdf</strong></a></p>
+<p><strong>5. Clermont, J., A. Grenier-Potvin, E. Duchesne, C.
+Chouchoux, F. Dulude-de Broin, A. Beardsell, J. Bêty, D. Berteaux, 2021.
+The predator activity landscape predicts the anti-predator behavior and
+distribution of prey in a tundra community. Ecosphere.
+135p.</strong><br />
+<a
+href="https://github.com/fredericddb/get-me-the-pdf/raw/main/the%20files/Clermont%20et%20al.%2C%202021.pdf"><strong>Clermont
+et al. 2021 - pdf</strong></a></p>
+<p><strong>4. Bates, A., R.Primack, [F. Dulude-de Broin &amp; 337
+authors], C. Duarte, 2021. Diverse Human-Nature Interactions Revealed by
+the Global COVID-19 Lockdown. Biological Conservation.
+42p.</strong><br />
+<a
+href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Bates%20et%20al.%2C%202021.pdf"><strong>Bates
+et al. 2021 - pdf</strong></a></p>
+<p><strong>3. Letourneux, F., T. Grandmont, F. Dulude-de Broin, M-C.
+Martin, J. Lefebvre, A. Kato, J. Bêty, G. Gauthier &amp; P. Legagneux,
+2020. COVID19-induced reduction in human disturbance enhances fattening
+rate of an overabundant goose species. Biological Conservation.
+27p.</strong><br />
+<a
+href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Letourneux%20et%20al.%2C%202020.%20COVID19-induced%20reduction%20in%20human%20disturbance%20enhances%20fattening%20of%20an%20overabundant%20goose%20species.pdf"><strong>Letourneux
+et al. 2020 - pdf</strong></a></p>
+<p><strong>2. Dulude-de Broin, F., S. Hamel, G. F. Mastromonaco, S. D.
+Côté, 2020. Predation risk and mountain goat reproduction: Evidence for
+stress-induced breeding suppression in a wild ungulate. Functional
+Ecology, 34 : 1003-1014.</strong><br />
+<a
+href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Dulude-de%20Broin%20et%20al.%2C%202020.pdf"><strong>Dulude-de
+Broin et al. 2020 - pdf</strong></a></p>
+<p><strong>1. Dulude-de Broin, F., S. D. Côté, D. P. Whiteside, G. F.
+Mastromonaco, 2019. Faecal metabolites and hair cortisol as biological
+markers of HPA-axis activity in the Rocky mountain goat. General and
+Comparative Endocrinology, 280: 147-157.</strong><br />
+<a
+href="https://fredericddb.github.io/get-me-the-pdf/the%20files/Dulude-de%20broin%20et%20al.%2C%202019.%20Gen.%20Comp.%20Endocrinol..pdf"><strong>Dulude-de
+Broin et al. 2019 - pdf</strong></a></p>
 <hr />
 
 
